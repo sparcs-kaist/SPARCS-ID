@@ -1,0 +1,21 @@
+{
+  "name": "ID-CARD-app",
+  "version": "0.1.0",
+  "description": "Client-Server Cluster for ID-CARD",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently --kill-others --names \"C,S\" --prefix-colors \"bgBlue.bold,bgMagenta.bold\" \"npm start --prefix client\" \"npm start --prefix server\"",
+    "build": "concurrently --kill-others --names \"C,S\" --prefix-colors \"bgBlue.bold,bgMagenta.bold\" \"npm run build --prefix client && serve -s client/build -p 3000\" \"npm run build --prefix server\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jiho Park",
+  "bugs": {
+    "url": "https://github.com/sparcs-kaist/ID-CARD",
+    "email": "night@sparcs.org"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
