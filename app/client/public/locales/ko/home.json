@@ -1,0 +1,9 @@
+{
+  "buttons":  {
+    "change-lang": "Change to English"
+  },
+  "main-banner" : {
+    "title": "SPARCS의 모든 것. 하나의 ID.",
+    "subtitle": "SPARCS ID로 OTL, 뉴아라, Taxi 등 SPARCS의 모든 서비스를 즐겨 보세요."
+  }
+}
