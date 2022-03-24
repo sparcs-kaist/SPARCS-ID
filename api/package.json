@@ -1,0 +1,35 @@
+{
+  "name": "id-card-api",
+  "version": "0.1.0",
+  "description": "API server for ID-CARD",
+  "main": "app.ts",
+  "scripts": {
+    "start": "node ./js/app.js",
+    "build": "tsc -b",
+    "develop": "nodemon --exec \"node --loader ts-node/esm ./app.ts\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sparcs-kaist/SPARCS-ID.git"
+  },
+  "author": "SPARCS KAIST",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sparcs-kaist/SPARCS-ID/issues"
+  },
+  "homepage": "https://github.com/sparcs-kaist/SPARCS-ID#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "sequelize": "^6.17.0",
+    "ts-node": "^10.7.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/express": "^4.17.13"
+  }
+}
